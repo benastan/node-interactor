@@ -1,0 +1,16 @@
+{
+  "name": "node-interactor",
+  "version": "0.0.1",
+  "description": "Interactor/organizer pattern for node/javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Ben Bergstein",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon": "*"
+  }
+}
