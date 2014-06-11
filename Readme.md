@@ -10,7 +10,7 @@ Here is a basic interactor:
 
 ```
 var perform;
-perform = require('interactor');
+perform = require('node-interactor');
 
 function Interactor() {}
 Interactor.perform = perform;
@@ -94,4 +94,4 @@ console.log(result.status);
 // "failed"
 console.log(result.message);
 // 2
-
+```
