@@ -66,6 +66,14 @@ describe('interactor library', function() {
         expect(result.message).to.equal('some success reason');
       });
     });
+
+    describe('raising an error', function() {
+      it('does not catch the error', function() {
+        FirstInteractor.prototype.perform = function() { throw 'my other error' };
+        try { FirstInteractor.perform(); }
+        catch (e) { expect(e).to.equal('my other error'); }
+      });
+    });
   });
 
   describe('perform organizer', function() {
